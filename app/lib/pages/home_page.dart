@@ -98,7 +98,7 @@ class _HomePageState extends State<HomePage> {
         centerTitle: true,
         backgroundColor: Theme.of(context).primaryColor,
         title: const Text(
-          "Doctors",
+          "Location",
           style: TextStyle(
               color: Colors.white, fontWeight: FontWeight.bold, fontSize: 27),
         ),
@@ -132,9 +132,9 @@ class _HomePageState extends State<HomePage> {
             selected: true,
             contentPadding:
                 const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
-            leading: const Icon(Icons.group),
+            leading: const Icon(Icons.search),
             title: const Text(
-              "Specilists",
+              "Search Doctor",
               style: TextStyle(color: Colors.black),
             ),
           ),
@@ -151,7 +151,7 @@ class _HomePageState extends State<HomePage> {
             },
             contentPadding:
                 const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
-            leading: const Icon(Icons.group),
+            leading: const Icon(Icons.person),
             title: const Text(
               "Profile",
               style: TextStyle(color: Colors.black),
@@ -227,7 +227,7 @@ class _HomePageState extends State<HomePage> {
           return StatefulBuilder(builder: ((context, setState) {
             return AlertDialog(
               title: const Text(
-                "Please Doctor . Create Your Specilist",
+                "Please Doctor . Specify the Location where you'll be based",
                 textAlign: TextAlign.left,
               ),
               content: Column(
@@ -285,7 +285,7 @@ class _HomePageState extends State<HomePage> {
                       });
                       Navigator.of(context).pop();
                       showSnackbar(context, Colors.green,
-                          "Speciality created successfully.");
+                          "Location created successfully.");
                     }
                   },
                   style: ElevatedButton.styleFrom(
@@ -353,7 +353,7 @@ class _HomePageState extends State<HomePage> {
             height: 20,
           ),
           const Text(
-            "Please if you're doctor create your specilist , and if you're a patient please Go ahead and search for Doctors",
+            "Please if you're doctor specify your Location and create your Location , and if you're a patient please Go ahead and search for Doctors",
             textAlign: TextAlign.center,
           )
         ],

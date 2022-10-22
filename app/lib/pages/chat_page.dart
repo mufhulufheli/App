@@ -50,7 +50,7 @@ class _ChatPageState extends State<ChatPage> {
       appBar: AppBar(
         centerTitle: true,
         elevation: 0,
-        title: Text(widget.groupName),
+        title: Text("Conversation"),
         backgroundColor: Theme.of(context).primaryColor,
         actions: [
           IconButton(

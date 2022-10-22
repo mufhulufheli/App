@@ -127,13 +127,13 @@ class _GroupInfoState extends State<GroupInfo> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "Specialist: ${widget.groupName}",
+                        "Location: ${widget.groupName}",
                         style: const TextStyle(fontWeight: FontWeight.w500),
                       ),
                       const SizedBox(
                         height: 5,
                       ),
-                      Text("Doctor: ${getName(widget.adminName)}")
+                      Text("Doctor Details : Dr ${getName(widget.adminName)}")
                     ],
                   )
                 ],

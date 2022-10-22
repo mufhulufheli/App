@@ -70,7 +70,8 @@ class _SearchPageState extends State<SearchPage> {
                     style: const TextStyle(color: Colors.white),
                     decoration: const InputDecoration(
                         border: InputBorder.none,
-                        hintText: "Search for Doctor Doctor....",
+                        hintText:
+                            "Search for nearst Doctor based on Location, e.g Cape Town",
                         hintStyle:
                             TextStyle(color: Colors.white, fontSize: 16)),
                   ),
@@ -160,13 +161,13 @@ class _SearchPageState extends State<SearchPage> {
         radius: 30,
         backgroundColor: Theme.of(context).primaryColor,
         child: Text(
-          groupName.substring(0, 1).toUpperCase(),
+          "Dr : ${getName(admin).substring(0, 1).toUpperCase()}",
           style: const TextStyle(color: Colors.white),
         ),
       ),
-      title:
-          Text(groupName, style: const TextStyle(fontWeight: FontWeight.w600)),
-      subtitle: Text("Name: ${getName(admin)}"),
+      title: Text("Dr ${getName(admin)}",
+          style: const TextStyle(fontWeight: FontWeight.w600)),
+      subtitle: Text("Location: ${groupName}"),
       trailing: InkWell(
         onTap: () async {
           await DatabaseService(uid: user!.uid)
@@ -188,7 +189,8 @@ class _SearchPageState extends State<SearchPage> {
           } else {
             setState(() {
               isJoined = !isJoined;
-              showSnackbar(context, Colors.red, "Left the group $groupName");
+              showSnackbar(
+                  context, Colors.red, "Cancelled Booking with Dr: $userName");
             });
           }
         },

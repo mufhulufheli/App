@@ -37,19 +37,19 @@ class _GroupTileState extends State<GroupTile> {
             radius: 30,
             backgroundColor: Theme.of(context).primaryColor,
             child: Text(
-              widget.groupName.substring(0, 1).toUpperCase(),
+              "Dr ${widget.userName.substring(0, 1).toUpperCase()} ",
               textAlign: TextAlign.center,
               style: const TextStyle(
                   color: Colors.white, fontWeight: FontWeight.w500),
             ),
           ),
           title: Text(
-            widget.groupName,
+            "Dr : ${widget.userName}",
             style: const TextStyle(fontWeight: FontWeight.bold),
           ),
           subtitle: Text(
-            "Join the conversation as ${widget.userName}",
-            style: const TextStyle(fontSize: 13),
+            "Located in : ${widget.groupName}",
+            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
           ),
         ),
       ),

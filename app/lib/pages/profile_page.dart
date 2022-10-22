@@ -66,9 +66,9 @@ class _ProfilePageState extends State<ProfilePage> {
             },
             contentPadding:
                 const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
-            leading: const Icon(Icons.medical_services_outlined),
+            leading: const Icon(Icons.search),
             title: const Text(
-              "Specialist",
+              "Search Doctor",
               style: TextStyle(color: Colors.black),
             ),
           ),
