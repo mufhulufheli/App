@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1054719289932",
+    "project_id": "doctorsdatalyx",
+    "storage_bucket": "doctorsdatalyx.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054719289932:android:a9473e6c6d1e18811862e9",
+        "android_client_info": {
+          "package_name": "com.example.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054719289932-l0b2654vg1gm3ivblsvgkcsnrvmvdin6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.app",
+            "certificate_hash": "835da2bcb59143963e2975f84706eaa150417225"
+          }
+        },
+        {
+          "client_id": "1054719289932-lta93bp70p20vmc59iscfag2mtv97r8j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGq4nTrj8ivSe5wT4t1UFlnyvpZ2ZAENE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054719289932-lta93bp70p20vmc59iscfag2mtv97r8j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
