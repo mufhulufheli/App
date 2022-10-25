@@ -227,7 +227,7 @@ class _HomePageState extends State<HomePage> {
           return StatefulBuilder(builder: ((context, setState) {
             return AlertDialog(
               title: const Text(
-                "Please Doctor . Specify the Location where you'll be based",
+                "Doctor , Please specify the Location where you'll be based",
                 textAlign: TextAlign.left,
               ),
               content: Column(
